@@ -55,9 +55,9 @@ body {
     height: 100%;
     width: 24vh;
     position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
+    bottom: 0;
     background-color: #111;
     overflow-x: hidden;
     padding-top: 60px;
@@ -138,9 +138,44 @@ body {
 
 .account-bar {
     color: white;
-    font-size: 0.75rem;
+    font-size: 0.95rem;
 }
 
 .end-bar:hover {
     color: white;
+}
+
+
+/* MAIN */
+.block {
+    width: 100vh;
+    background-color: yellow;
+    height: 100vw;
+
+}
+
+.download {
+    width: 1rem;
+}
+
+.profile {
+    background-color: #a3a3a3;
+    border-radius: 50%;
+    width: 1rem;
+}
+
+/* FOOTER  */
+
+
+
+.footer-s {
+    background-color: #282828;
+    padding-top: 30px;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    overflow-x: hidden;
+
 }
