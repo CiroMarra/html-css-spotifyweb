@@ -49,6 +49,8 @@ body {
 
 /* HEADER  */
 
+
+
 .sidebar {
     height: 100%;
     width: 24vh;
@@ -73,13 +75,25 @@ body {
    padding-left: 10px;
   }
 
+  .logo:hover {
+    filter:invert(58%) sepia(97%) saturate(427%) hue-rotate(87deg) brightness(98%) contrast(85%);
+  }
+
+  .bar-link a img {
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:5px;
+  }
+
   .bar-link a {
     text-decoration: none;
     color: #717171;
+
   }
 
   .bar-link ul {
     list-style: none;
+    
   }
 
   .bar-link a:hover, .side-img:hover  {
@@ -125,4 +139,8 @@ body {
 .account-bar {
     color: white;
     font-size: 0.75rem;
+}
+
+.end-bar:hover {
+    color: white;
 }
