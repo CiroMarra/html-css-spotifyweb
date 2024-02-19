@@ -14,14 +14,44 @@
     margin: 0 auto;
 }
 
-body {
-    background-color: #141922;
+.pdl-10 {
+    padding-left: 15px;
 }
 
+.pdb-10 {
+    margin-bottom: 10px;
+}
+
+.weight7 {
+    font-weight: 700;
+}
+
+body {
+    background-color: #141922;
+    font-family: "Montserrat", sans-serif;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+/* BOTTONI */
+    /* NAV */
+    .btn {
+        height: 40px;
+        width: 40px;
+        background-color: #a3a3a3;
+        border: none;
+        color: black;
+        font-size: 25px;
+        cursor: pointer;
+        text-align: center;
+    }
+
+/* HEADER  */
 
 .sidebar {
     height: 100%;
-    width: 200px;
+    width: 24vh;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -46,9 +76,10 @@ body {
   .bar-link a {
     text-decoration: none;
     color: #717171;
-    padding-left: 10px;
-    
+  }
 
+  .bar-link ul {
+    list-style: none;
   }
 
   .bar-link a:hover, .side-img:hover  {
@@ -56,3 +87,42 @@ body {
     filter: brightness(1);
   }
 
+  .playlist-link {
+    margin-top: 40px;
+    padding-left: 10px;
+    color: #fdfdfd;
+    line-height: 2.5rem;
+  }
+
+.button-playlist {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.bar-end {
+    display: flex;
+   align-content: flex-end;
+   position: relative;
+
+}
+
+.text-end {
+    color: #717171;
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    font-size: 12px;
+    font-weight: bolder;
+ 
+}
+
+.text-end hr {
+    width: 20vh;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.account-bar {
+    color: white;
+    font-size: 0.75rem;
+}
