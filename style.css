@@ -6,36 +6,18 @@
     margin: 0;
     padding: 0;
 }
-
-/* GENERAL  */
-.container {
-    max-width: 1170px;
-    padding: 0 10px;
-    margin: 0 auto;
-}
-
-.pdl-10 {
-    padding-left: 15px;
-}
-
-.pdb-10 {
-    margin-bottom: 10px;
-}
-
-.weight7 {
-    font-weight: 700;
+.container-app {
+    height: calc(100vh - 90px);
+    display: flex;
 }
 
 body {
-    background-color: #141922;
     font-family: "Montserrat", sans-serif;
+    font-size: 16px;
 }
-.flex {
-    display: flex;
-    flex-direction: column;
-}
-/* BOTTONI */
-    /* NAV */
+
+/* GENERAL */
+    /* bottoni */
     .btn {
         height: 40px;
         width: 40px;
@@ -47,84 +29,110 @@ body {
         text-align: center;
     }
 
-/* HEADER  */
-
-
+    .button-playlist {
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
 
 .sidebar {
+    background-color: #000000;
+    max-width: 24vh;
     height: 100%;
-    width: 24vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    padding-top: 60px;
-  }
+    display: flex;
+    overflow: hidden;
+    padding: 10px 20px;
+    flex-direction: column;
+}
 
-  .side-img {
+main {
+    background-color: yellow;
+    width: 100%;
+}
+
+footer {
+    background-color: black;
+    height: 90px;
+}
+
+/* HEADER  */
+   .logo {
+     height: 50px;
+     text-align: center;
+   }
+
+   .small-logo {
+    height: 50px;
+    text-align: center;
+    display: none;
+   }
+
+   .logo:hover {
+    filter:invert(58%) sepia(97%) saturate(427%) hue-rotate(87deg) brightness(98%) contrast(85%);
+  }
+ 
+   .nav-main {
+    padding-top: 60px;
+   }
+
+   .nav-small-main {
+    display: none;
+    margin-top: 60px;
+   }
+
+   .side-img {
     width: 30px;
     height: 30px;
     filter: brightness(0.3);
   }
 
-  .logo {
-   max-width: 80%;
-   margin-bottom: 30px;
-   padding-left: 10px;
+  .nav-main a:hover, .side-img:hover, .playlist-link a:hover {
+    color: white;
+    filter: brightness(1);
   }
 
-  .logo:hover {
-    filter:invert(58%) sepia(97%) saturate(427%) hue-rotate(87deg) brightness(98%) contrast(85%);
-  }
-
-  .bar-link a img {
-    display:inline-block;
-    vertical-align:middle;
-    margin-right:5px;
-  }
-
-  .bar-link a {
+  .nav-main a {
     text-decoration: none;
     color: #717171;
 
   }
 
-  .bar-link ul {
+  .nav-main ul {
     list-style: none;
     
   }
 
-  .bar-link a:hover, .side-img:hover  {
-    color: white;
-    filter: brightness(1);
+  .nav-main a img {
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:5px;
   }
 
   .playlist-link {
-    margin-top: 40px;
-    padding-left: 10px;
-    color: #fdfdfd;
-    line-height: 2.5rem;
+    color: white;
+    padding-top: 30px;
   }
 
-.button-playlist {
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
+  .playlist-link a {
+    text-decoration: none;
+    color: #717171;
 
-.bar-end {
-    display: flex;
-   align-content: flex-end;
-   position: relative;
+  }
+
+  .playlist{
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+
+
+  
+  .bar-end {
+   margin-top: auto;
+
 
 }
 
 .text-end {
     color: #717171;
-    position: absolute;
-    bottom: 20px;
-    left: 15px;
     font-size: 12px;
     font-weight: bolder;
  
@@ -146,14 +154,6 @@ body {
 }
 
 
-/* MAIN */
-.block {
-    width: 100vh;
-    background-color: yellow;
-    height: 100vw;
-
-}
-
 .download {
     width: 1rem;
 }
@@ -163,19 +163,37 @@ body {
     border-radius: 50%;
     width: 1rem;
 }
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 70px;
+    }
+    
 
-/* FOOTER  */
+    .playlist-link{
+        display: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .small-logo {
+        height: 30px;
+        display: inline;
+       }
 
 
-
-.footer-s {
-    background-color: #282828;
-    padding-top: 30px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    overflow-x: hidden;
+      .nav-main {
+        display: none;
+      } 
+      
+      .nav-small-main {
+        display: inline;
+        padding: 60px;
+ 
+      }
+      .small-logo:hover {
+        filter:invert(58%) sepia(97%) saturate(427%) hue-rotate(87deg) brightness(98%) contrast(85%);
+      }
 
 }
