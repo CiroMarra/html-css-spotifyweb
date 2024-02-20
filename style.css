@@ -37,12 +37,12 @@ body {
     }
 
     .col {
-      width: calc(100vh / 6 );
+      width: calc(100%/ 6 );
+      display: flex;
     }
 
     .container {
-  width: 100%;
-  height: auto;
+     max-width: 100%;
 }
 
 
@@ -213,6 +213,7 @@ main {
 .row {
   display: flex;
   flex-wrap: wrap;
+
 }
 
 .main-menu {
@@ -250,6 +251,49 @@ main {
   color:white;
 }
 
+.card {
+  padding-top: 30px;
+  text-align: center;
+ 
+}
+
+.card img {
+  width: 95%;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 10px;
+
+}
+
+.card-text {
+  padding-top: 20px;
+}
+
+main span {
+  color:#7a7d81;
+
+}
+.main-end span {
+  font-size: 12px;
+}
+.circle {
+  border-radius: 50%;
+}
+
+@media screen and ( max-width: 1100px) {
+  .col {
+    width: calc(90%/ 4 );
+  }
+
+}
+  
+@media screen and ( max-width: 700px) {
+  .col {
+    width: calc(90%/ 2 );
+  }
+
+}
+
 @media screen and (max-width: 600px) {
     .sidebar {
         width: 70px;
@@ -283,4 +327,22 @@ main {
         filter:invert(58%) sepia(97%) saturate(427%) hue-rotate(87deg) brightness(98%) contrast(85%);
       }
 
+      hr {
+        display: none;
+      }
+
+      .installa, .name {
+        display: none;
+      }
+
+      .download {
+        width: 2rem;
+    }
+  
+    .profile {
+        background-color: #a3a3a3;
+        border-radius: 50%;
+        width: 2rem;
+    }
+  
 }
