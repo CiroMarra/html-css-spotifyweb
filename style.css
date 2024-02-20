@@ -7,14 +7,16 @@
     padding: 0;
 }
 .container-app {
-    height: calc(100vh - 90px);
+    height: calc(100dvh - 90px);
     display: flex;
 }
 
 body {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
+
 }
+
 
 /* GENERAL */
     /* bottoni */
@@ -34,7 +36,24 @@ body {
         margin-top: 10px;
     }
 
-.sidebar {
+    .col {
+      width: calc(100vh / 6 );
+    }
+
+    .container {
+  width: 100%;
+  height: auto;
+}
+
+
+footer {
+    background-color: #282828;
+    height: 90px;
+}
+
+/* HEADER  */
+
+  .sidebar {
     background-color: #000000;
     max-width: 24vh;
     height: 100%;
@@ -42,21 +61,10 @@ body {
     overflow: hidden;
     padding: 10px 20px;
     flex-direction: column;
-}
-
-main {
-    background-color: yellow;
-    width: 100%;
-}
-
-footer {
-    background-color: black;
-    height: 90px;
-}
-
-/* HEADER  */
+    line-height: 2rem;
+  }
    .logo {
-     height: 50px;
+    max-height: 7.5rem;
      text-align: center;
    }
 
@@ -119,7 +127,6 @@ footer {
   }
 
   .playlist{
-    flex-grow: 1;
     overflow-y: auto;
   }
 
@@ -129,40 +136,120 @@ footer {
    margin-top: auto;
 
 
+ }
+
+  .text-end {
+      color: #717171;
+      font-size: 12px;
+      font-weight: bolder;
+  
+  }
+
+  .text-end hr {
+      width: 20vh;
+      margin-top: 5px;
+      margin-bottom: 5px;
+  }
+
+  .account-bar {
+      color: white;
+      font-size: 0.95rem;
+  }
+
+  .end-bar:hover {
+      color: white;
+  }
+
+
+  .download {
+      width: 1rem;
+  }
+
+  .profile {
+      background-color: #a3a3a3;
+      border-radius: 50%;
+      width: 1rem;
+  }
+
+/* MAIN */
+main {
+  background-color: #141922;
+  width: 100%;
+  overflow-y: auto;
+  flex-grow: 1;
 }
 
-.text-end {
-    color: #717171;
-    font-size: 12px;
-    font-weight: bolder;
+.main-top {
+  background-color: #080b12;
+  display: flex;
+  height: 70px;
+  
+}
+
+.main-btn {
+  margin-left: auto;
+  margin-right: 20px;
+  margin-top: 10px;
  
 }
 
-.text-end hr {
-    width: 20vh;
-    margin-top: 5px;
-    margin-bottom: 5px;
+.btn-main {
+ background: none;
+ border: 1px solid white;
+ color: white;
+ padding: 10px 10px;
+ border-radius: 20px;
 }
 
-.account-bar {
-    color: white;
-    font-size: 0.95rem;
+.btn-main:hover {
+  background: none;
+  border: 1px solid white;
+  color: white;
+  padding: 15px 15px;
+  border-radius: 20px;
+  font-size: 14px;
 }
 
-.end-bar:hover {
-    color: white;
+.row {
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.main-menu {
+  color: white;
 
-.download {
-    width: 1rem;
 }
 
-.profile {
-    background-color: #a3a3a3;
-    border-radius: 50%;
-    width: 1rem;
+.menu-text {
+  color: white;
+  margin: auto;
+  gap: 60px;
+  list-style: none;  
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  font-weight: bold;
 }
+
+.border-text:hover {
+  border-bottom: 2px solid #adff2f;
+}
+
+.menu-text a {
+  color:#7a7d81;
+  text-decoration: none;
+}
+
+.menu-text a:hover {
+  color:white;
+
+}
+
+.recent-play {
+  padding: 30px 30px;
+  color:white;
+}
+
 @media screen and (max-width: 600px) {
     .sidebar {
         width: 70px;
