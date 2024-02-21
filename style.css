@@ -366,8 +366,6 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
-
  }
 
 .footer-marginr {
@@ -411,14 +409,13 @@ footer {
   margin-right: 60px;
 }
 .size {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .playbtn {
   scale: 3;
   margin-left: 0px;
-  margin-right: 20px;
-  padding-top:  9px;
+  padding-top:  2px;
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -429,7 +426,6 @@ footer {
 .nav-footer {
   position: relative;
   display: flex;
-  justify-content: center;
 }
 
 .video {
@@ -437,7 +433,6 @@ footer {
   display: flex;
   max-width: 60px;
   max-height: 60px;
-  margin-left: 20px;
 }
 
 .video-txt {
@@ -459,9 +454,8 @@ footer {
 
 .favorite {
   display: flex;
-  justify-content: center;
   align-items: center;
-  padding-left: 30px;
+  flex-wrap: wrap;
   color: #848484;
 }
 
@@ -478,6 +472,15 @@ footer {
   text-align: center;
 }
 
+.high {
+  margin-top: 16px;
+}
+
+.sec-bar {
+  margin-top: 16px;
+  padding-right: 8px;
+}
+
 
 
 @media screen and ( max-width: 1100px) {
@@ -485,7 +488,15 @@ footer {
     width: calc(90%/ 4 );
   }
 
+  .col-nav {
+   max-width: calc(100% / 3);
+  }
 
+  .footer-row {
+    display: flex;
+    flex-wrap: nowrap;
+   }
+  
 
 }
   
@@ -495,8 +506,17 @@ footer {
   }
 
   .col-nav {
+    max-width: calc(100% / 3);
+  }
+
+
+  .container {
     max-width: 100%;
   }
+
+  .footer-marginr {
+    margin-right:15px;
+    }
 
 }
 
@@ -551,4 +571,9 @@ footer {
         width: 2rem;
     }
   
+    .col-nav {
+      max-width: calc(100% / 3);
+    }
+    
+
 }
