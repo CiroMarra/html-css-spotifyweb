@@ -61,6 +61,7 @@ footer {
     overflow: hidden;
     padding: 10px 20px;
     flex-direction: column;
+    flex-wrap: nowrap;
     line-height: 2rem;
   }
    .logo {
@@ -126,11 +127,19 @@ footer {
 
   }
 
-  .playlist{
-    overflow-y: auto;
+  .playlink {
+    display: flex;
   }
 
+  .playlist{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    flex-grow: 1;
+    height: 100%;
+  }
 
+ 
   
   .bar-end {
    margin-top: auto;
@@ -274,10 +283,63 @@ main span {
 
 }
 .main-end span {
-  font-size: 12px;
+  font-size: 14px;
 }
 .circle {
   border-radius: 50%;
+}
+
+.img-card {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.overlay {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 100%;
+  max-width: 95%;
+  opacity: 0;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 80px;
+  background-color: rgba(0,0,0, 0.5);
+  transition: .5s ease;
+}
+
+.img-card:hover .overlay {
+  opacity: 1;
+}
+
+.overlay2 {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 100%;
+  max-width: 95%;
+  opacity: 0;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  color: white;
+  font-size: 80px;
+  background-color: rgba(0,0,0, 0.5);
+}
+
+.circle:hover .overlay2 {
+  opacity: 1;
+  border-radius: 50%;
+
 }
 
 @media screen and ( max-width: 1100px) {
@@ -285,12 +347,16 @@ main span {
     width: calc(90%/ 4 );
   }
 
+
+
 }
   
 @media screen and ( max-width: 700px) {
   .col {
     width: calc(90%/ 2 );
   }
+
+
 
 }
 
