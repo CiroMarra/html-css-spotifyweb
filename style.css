@@ -198,6 +198,9 @@ main {
   background-color: #080b12;
   display: flex;
   height: 70px;
+  width: 100%;
+  overflow-y: hidden;
+  position: sticky;
 }
 
 .main-btn {
@@ -419,6 +422,11 @@ footer {
   padding-right: 20px;
   padding-left: 20px;
 }
+
+.playbtn:hover {
+  scale: 3.2;
+}
+
 .video img {
   width: 100%;
 }
@@ -464,7 +472,8 @@ footer {
 }
 
 .fav {
-  padding-left: 10px
+  color:#848484;
+  padding-left: 4px;
 }
 
 .play {
